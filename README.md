@@ -1,47 +1,72 @@
-# Angelina's Projects
+## Angelina's Notepad and Maker USB
 
-This repository contains two applications created by Angelina Botez: Notepad and Maker USB.
+This repository contains two open-source applications created by Angelina Botez:
 
-## Notepad
+* **Notepad:** A text editor built with PyQt5.
+* **Maker USB:** A USB drive formatter for creating bootable drives using `dd`. (Uses PyQt5 and psutil)
 
-An open-source Notepad application created using PyQt5.
+## Features
 
-### Features
+**Notepad**
 
-- Create, open, save, and edit text files
-- Basic text editing functions: undo, redo, cut, copy, paste, delete, find, replace, select all
-- Zoom in and zoom out
-- About dialog with version and license information
+* Create, open, save, and edit text files
+* Basic text editing functionalities (undo, redo, cut, copy, paste, delete, find, replace, select all)
+* Zoom in and out
+* Displays version and license information in an "About" dialog
+
+**Maker USB**
+
+* Select ISO file and USB drive
+* Creates bootable USB drives using `dd`
+* Displays version and license information in an "About" dialog
+
+## Getting Started
+
+### Prerequisites
+
+You'll need Python 3 and Git installed on your system.
 
 ### Installation
 
-1. Clone the repository:
+1. Clone this repository:
+
    ```bash
    git clone https://github.com/AngelinaUk/angelinaproject.git
-2. Set Up a Virtual Environment
+   cd angelinaproject
+   ```
 
-  python3 -m venv venv
+2. Set up a virtual environment (recommended):
 
-  source venv/bin/activate
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
 
-4. Install Required Packages
+3. Install dependencies:
 
- pip install pyqt5 psutil
+   ```bash
+   pip install pyqt5 psutil
+   ```
 
-5. Run the Applications Notepad
+### Running the Applications
 
-To run the Notepad application :
+#### Notepad
 
- python3 notepad.py
+```bash
+python3 notepad.py
+```
 
-Maker USB
-To run the Maker USB application:
+#### Maker USB
 
- python3 makerusb.py
+```bash
+python3 makerusb.py
+```
 
-License
-This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
+## License
 
-About
-Created by Angelina Botez
-Version 1.0
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
+
+## About
+
+- Created by Angelina Botez
+- Version 1.0
