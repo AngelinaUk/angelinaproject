@@ -22,22 +22,22 @@ An open-source Notepad application created using PyQt5.
 
   python3 -m venv venv
 
-source venv/bin/activate
+  source venv/bin/activate
 
 4. Install Required Packages
 
-pip install pyqt5 psutil
+ pip install pyqt5 psutil
 
 5. Run the Applications Notepad
 
 To run the Notepad application :
 
-python3 notepad.py
+ python3 notepad.py
 
 Maker USB
 To run the Maker USB application:
 
-python3 makerusb.py
+ python3 makerusb.py
 
 License
 This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
