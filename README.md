@@ -1,9 +1,10 @@
-## Angelina's Notepad and Maker USB
+## Angelina's Utilities Collection
 
-This repository contains two open-source applications created by Angelina Botez:
+This repository contains open-source applications and utilities created by Angelina Botez:
 
 * **Notepad:** A text editor built with PyQt5.
 * **Maker USB:** A USB drive formatter for creating bootable drives using `dd`. (Uses PyQt5 and psutil)
+* **System Info:** A command-line utility written in C that displays comprehensive system information.
 
 ## Features
 
@@ -20,11 +21,27 @@ This repository contains two open-source applications created by Angelina Botez:
 * Creates bootable USB drives using `dd`
 * Displays version and license information in an "About" dialog
 
+**System Info**
+
+* Displays operating system information (name, version, kernel, architecture)
+* Shows CPU model and core count
+* Reports memory usage (RAM and swap)
+* Shows system uptime and process count
+* Displays current user information
+* Shows disk usage for mounted filesystems
+* Command-line options for help and version information
+
 ## Getting Started
 
 ### Prerequisites
 
-You'll need Python 3 and Git installed on your system.
+**For Python applications (Notepad and Maker USB):**
+- Python 3
+- Git
+
+**For System Info utility:**
+- GCC compiler (or any C compiler)
+- Make (optional, for easier compilation)
 
 ### Installation
 
@@ -60,6 +77,38 @@ python3 notepad.py
 
 ```bash
 python3 makerusb.py
+```
+
+#### System Info
+
+First, compile the program:
+
+```bash
+make
+```
+
+Or compile manually:
+
+```bash
+gcc -Wall -Wextra -O2 -o sysinfo sysinfo.c
+```
+
+Then run it:
+
+```bash
+./sysinfo
+```
+
+To see available options:
+
+```bash
+./sysinfo --help
+```
+
+To install system-wide (optional, requires sudo):
+
+```bash
+sudo make install
 ```
 
 ## License
